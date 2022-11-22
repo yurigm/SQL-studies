@@ -44,3 +44,27 @@ WHERE FirstName = 'Peter' and LastName = 'Krebs'
 SELECT *
 FROM person.EmailAddress
 WHERE BusinessEntityID = '26'
+
+SELECT count(*)
+FROM person.Person
+
+SELECT count(*)
+FROM Production.Product
+
+SELECT count(DISTINCT Size)
+FROM Production.Product
+
+SELECT TOP 10 *
+FROM Production.Product
+
+SELECT FirstName, LastName
+FROM Person.Person
+ORDER BY FirstName asc,LastName desc
+
+SELECT TOP 10 ProductID
+FROM Production.Product
+ORDER BY ListPrice desc
+
+SELECT TOP 4 Name,ProductNumber
+FROM Production.Product 
+ORDER BY ProductID asc
